@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'first_app',
     'second_app',
     'third_app',
+    'fourth_app',
+    'fifth_app',
     'corsheaders',
 ]
 
@@ -132,3 +134,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = BASE_DIR / 'staticfiles'''
 CORS_ORIGIN_ALLOW_ALL = True
 DF_GLOBAL = pd.read_csv('D:\Work\Semestre10\IA\TotalFeatures-ISCXFlowMeter.csv')
+DF_GLOBAL_2 = pd.read_csv('D:\Work\Semestre10\IA\creditcard.csv')

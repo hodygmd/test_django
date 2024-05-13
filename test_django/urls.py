@@ -22,4 +22,6 @@ urlpatterns = [
     path('api1/',include('first_app.urls')),
     path('api2/',include('second_app.urls')),
     path('api3/',include('third_app.urls')),
+    path('api4/',include('fourth_app.urls')),
+    path('api5/',include('fifth_app.urls')),
 ]

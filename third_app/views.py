@@ -46,10 +46,10 @@ y_pred = clf_rnd.predict(X_val)
 # Uso de Grid Search para selección del modelo
 param_grid = [
     # try 9 (3×3) combinations of hyperparameters
-    {'n_estimators': [10, 20, 30], 'max_leaf_nodes': [2, 4, 6]},
+    {'n_estimators': [2, 2, 2], 'max_leaf_nodes': [2, 2, 2]},
     #{'n_estimators': [100, 500, 1000], 'max_leaf_nodes': [16, 24, 36]},
     # then try 6 (2×3) combinations with bootstrap set as False
-    {'bootstrap': [False], 'n_estimators': [10, 20], 'max_features': [2, 2, 2]},
+    {'bootstrap': [False], 'n_estimators': [2, 2], 'max_features': [2, 2, 2]},
     #{'bootstrap': [False], 'n_estimators': [100, 500], 'max_features': [2, 3, 4]},
   ]
 rnd_clf = RandomForestClassifier(n_jobs=-1, random_state=42)
