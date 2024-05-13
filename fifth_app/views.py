@@ -86,7 +86,7 @@ clusters = dbscan.labels_
 
 class GetPurity(View):
     def get(self,request):
-        return JsonResponse({"Purity Score": purity_score(y, clusters)})
+        return JsonResponse({"Purity Score": purity_score(df["Class"].copy(), clusters)})
 class GetSilhouette(View):
     def get(self,request):
         return JsonResponse({"Silhouette Score": metrics.silhouette_score(X_reduced, clusters, sample_size=10000)})
